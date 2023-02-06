@@ -1,0 +1,158 @@
+body{
+  display: flex;
+  justify-content: center;
+  
+}
+#map{
+  /* height: 100%; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* .mapboxgl-ctrl{
+  display: none !important;
+} */
+
+ #div {
+   position: absolute;
+   /* display: none; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   top: 136px;
+   /*left: 521px; */
+   background: rgb(255, 255, 255);
+   width: 0px;
+   height: 0px;
+   /* z-index: 500 !important; */
+   z-index:2;
+    }
+  .mapboxgl-popup {
+    max-width: 200px;
+    }
+
+#addresss,#pricee,#roomss{
+width: 200px;
+border: 1px solid;
+padding: 2px 5px;
+
+/* Both of the following are required for text-overflow */
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+#ApartmentTitlePar{
+  width: 100%;
+  padding-right:42%;
+  background-color: blue;
+  color: white;
+  /* overflow: hidden; */
+  justify-content: space-between;
+  align-items: center;
+}
+#ApartmentBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* overflow: scroll; */
+}
+#ApartmentData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+#ApartmentImages{
+  overflow: auto;
+}
+#ApartmentImages::-webkit-scrollbar {
+  width: 12px;
+}
+#ApartmentImages::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+#ApartmentImages::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#XBTN{
+background-color: transparent;
+color: white;
+font-size: 30px;
+border: 0px;
+width: 40px;
+height: 40px;
+overflow: hidden;
+margin: 5px;
+border-radius: 15px;
+vertical-align: middle;
+}
+#XBTN:hover{
+  background-color: cyan;
+}
+
+      
+#PreLoader{
+background: black url("imgs/load.gif") no-repeat center center;
+background-size: 15%;
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 100;
+}
+
+#btn {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 100px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  /* box-sizing: border-box; */
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  /* line-height: 1em; */
+  /* max-width: 100%; */
+  /* min-width: 140px; */
+  padding: 19px 24px;
+  text-decoration: none;
+  /* user-select: none; */
+  /* -webkit-user-select: none; */
+  /* touch-action: manipulation; */
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+#btn:active,
+#btn:hover {
+  /* outline: 0; */
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+/* @media (min-width: 768px) {
+  #btn {
+    font-size: 24px;
+    min-width: 196px;
+  }
+} */
+
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0ms, opacity 300ms;
+}
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0.2s, opacity 300ms;
+}
